@@ -10,11 +10,12 @@ async function prueba(){
    document.querySelector("#gameOver").classList.remove("visible");
    document.querySelector("#subeNivel").classList.remove("visible");
 
+ 
    document.querySelectorAll(".tarjeta").forEach(
-    function (elemento){
-       elemento.addEventListener("click",discover);
-    }
-   );
+         function (elemento){
+            elemento.addEventListener("click",discover);
+         }
+   )
 
    //inciarCronometro();
 }

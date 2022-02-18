@@ -4,6 +4,11 @@ body {
   flex-direction: column;
   position: relative;
 }
+/* 
+.fondo{
+	background-image: url(../img/fondo.jpg);
+	background-size: cover;
+} */
 
 .bienvenida {
   display: none;
@@ -40,7 +45,7 @@ body {
 
 .cabecera {
   padding: 0.5rem 2rem;
-  background: white;
+  background: rgb(19, 16, 16);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
@@ -54,7 +59,7 @@ body {
   text-transform: uppercase;
   line-height: 1;
   margin: 0;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgb(251, 251, 251);
 }
 
 .cabecera-num {
@@ -78,6 +83,9 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
+  top: 60px;
+  /* margin-left: auto; 
+ margin-right: auto; */
 }
 
 .mesa {
@@ -89,24 +97,11 @@ main {
   margin: auto;
 }
 
-.vueltaFront {
-	background-image: url(../img/background.jpg);
-	background-size: cover;
-	border-radius: 15px;
-}
-
-.vueltaBack {
-	transform: rotateY(180deg);
-	background-size: cover;
-	border-radius: 15px;
-}
-
 .tarjeta {
   width: 6rem;
   height: 6rem;
   margin: 0.5rem;
   border-radius: 0.3em;
-  background-image: var(--gradient);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: 0.3s;
@@ -131,6 +126,18 @@ main {
   align-items: center;
   font-size: 2.5rem;
   padding-top: 0.4rem;
+}
+
+.vueltaFront {
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	border-radius: 15px;
+}
+
+.vueltaBack {
+	transform: rotateY(180deg);
+	background-size: cover;
+	border-radius: 15px;
 }
 
 .tarjeta__contenido::selection {
@@ -195,12 +202,17 @@ main {
 .end-game {
   display: none;
   position: absolute;
-  top: 0;
+  top: 40%;
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: var(--gradient);
-}
+  background-image: none;
+  /* background-image: url(../img/fondo.jpg);
+  background-size: 105%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;  */
+} 
 
 .sube-nivel.visible,
 .game-over.visible,
@@ -209,7 +221,7 @@ main {
 }
 
 .modal {
-  background: white;
+  background: rgb(2, 1, 1);
   padding: 3rem 3rem 1rem;
   margin: auto;
   text-align: center;
@@ -229,6 +241,7 @@ main {
 
 .modal p {
   font-size: 1.5rem;
+  color: var(--orange);
 }
 
 .modal button {
@@ -241,7 +254,7 @@ button {
   background-image: var(--gradient);
   padding: 0.75rem 4rem;
   border-radius: 5rem;
-  color: white;
+  color: rgb(10, 1, 1);
   font-family: var(--font-display);
   font-weight: 600;
   text-transform: uppercase;
@@ -257,7 +270,7 @@ button:focus {
 }
 
 .modal .reiniciar {
-  color: var(--hotpink);
+  color: var(--orange);
   background: transparent;
   border: 0;
   text-transform: capitalize;
