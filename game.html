@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="img/background.jpg"" type="image/x-icon">
+    <title>Rick And Mory - GAME</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="fondo">
+        <!-- <div id="bienvenida" class="bienvenida">
+            <h1>☠️ Rick And Mory ☠️</h1>
+            <h4> ¡Memory Game! </h4>
+            <div class="bienvenida-botones">
+            <button type="submit">¡Play!</button>
+            </div>
+        </div> -->
+        <header class="cabecera">
+            <div class="contadores">
+            <div class="contador-item">
+                <h4 class="cabecera-titulo">Movimientos</h4>
+                <div class="cabecera-num">
+                <span id="mov">00</span>/<span id="mov-total">20</span>
+                </div>
+            </div>
+            </div>
+            <div class="nivel">
+            <h4 class="cabecera-titulo">Nivel</h4>
+            <div class="cabecera-num"><span id="nivel">01</span></div>
+            </div>
+        </header>
+        
+        <main>
+            <!-- <div id="cargando">
+                <img class="rotate" src="../img/portal.png" alt="" />
+                <p>Loading...</p>
+            </div> --> 
+            <div id="mesa" class="mesa"></div>
+            <div id="subeNivel" class="sube-nivel">
+            <div class="modal">
+                <h2>¡Muy bien!</h2>
+                <button id="subir">Siguiente nivel</button>
+                <button class="reiniciar">Reiniciar</button>
+            </div>
+            </div>
+            <div id="gameOver" class="game-over">
+            <div class="modal">
+                <h2>¡Oh no!</h2>
+                <p>Te has quedado sin movimientos 😭</p>
+                <button class="reiniciar">Reiniciar</button>
+            </div>
+            </div>
+            <div id="endGame" class="end-game">
+            <div class="modal">
+                <h2>¡Enhorabuena!</h2>
+                <p>Has superado todos los niveles 🏆</p>
+                <button class="reiniciar">Reiniciar</button>
+            </div>
+            </div>
+            <div id="loader" class="loader-general">
+                <div class="modal-loader">
+                    <img class="rotate" src="img/portal.jpg" alt="" />
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </main>
+  
+    </div>
+      <audio
+        src="js/sonidos/acierto.mp3"
+        class="sonido"
+        id="sonido-acierto"
+        preload="auto"
+      ></audio>
+      <audio
+        src="js/sonidos/error.mp3"
+        class="sonido"
+        id="sonido-error"
+        preload="auto"
+      ></audio>
+      <audio
+        src="js/sonidos/carta.mp3"
+        class="sonido"
+        id="sonido-carta"
+        preload="auto"
+      ></audio>
+ 
+    <script src="js/MemoryGame/ConstGlobal-Fetch.js"></script>  
+    <script src="js/MemoryGame/Distribute-mixCards.js"></script> 
+    <script src="js/MemoryGame/cambiaNivel.js"></script>
+    <script src="js/MemoryGame/finalizar.js"></script>   
+    <script src="js/MemoryGame/Discover-Comparator.js"></script>    
+    <script src="js/MemoryGame/Sucess-Wrong.js"></script>
+    <script src="js/MemoryGame/cronometro.js"></script>   
+    <script src="js/MemoryGame/movimientos.js"></script>
+    <script src="js/MemoryGame/gameOver.js"></script>
+    <script src="js/MemoryGame/juego.js"></script>
+    <script src="js/MemoryGame/loader.js"></script>
+</body>
+</html> 

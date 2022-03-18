@@ -27,4 +27,6 @@ async function distributeCards(){
 
       mesa.appendChild(card);
    });
+
+   document.querySelector("#loader").classList.add("noVisible")
 }

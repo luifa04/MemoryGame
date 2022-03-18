@@ -10,13 +10,12 @@ async function prueba(){
    document.querySelector("#gameOver").classList.remove("visible");
    document.querySelector("#subeNivel").classList.remove("visible");
 
- 
    document.querySelectorAll(".tarjeta").forEach(
          function (elemento){
-            elemento.addEventListener("click",discover);
+               elemento.addEventListener("click",discover);
          }
    )
-
+   
    //inciarCronometro();
 }
 
@@ -31,12 +30,18 @@ function reiniciar(){
 async function ver(){
    await prueba();
 
+   
+
    document.querySelectorAll(".reiniciar").forEach(function(elemento){
            elemento.addEventListener("click", reiniciar);
+           elemento.addEventListener("click", loader);
      });
      
   document.querySelector("#subir").addEventListener("click", cargaNuevoNivel);
+  document.querySelector("#subir").addEventListener("click", loader);
 
+  
+  
 }
 
 ver();

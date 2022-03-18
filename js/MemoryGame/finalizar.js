@@ -4,5 +4,4 @@ function finishGame(){
     }else{
         document.querySelector("#endGame").classList.add("visible");
     }
-    
 }

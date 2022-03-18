@@ -10,9 +10,9 @@ body {
 	background-size: cover;
 } */
 
+/* 
 .bienvenida {
   display: none;
-  /* display: flex; */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -24,20 +24,24 @@ body {
   justify-content: center;
   text-align: center;
   z-index: 1;
-}
+} */
 
-.bienvenida h1 {
+
+/* estaba agregada la clase bienvenida, la elimine por ahora */
+h1 {
   font-family: var(--font-display);
   text-transform: uppercase;
   font-size: 5rem;
   margin-top: 0;
 }
 
-.bienvenida-botones {
+/* .bienvenida-botones {
   display: flex;
-}
+} */
 
-.bienvenida button {
+
+/* estaba agregada la clase bienvenida, la elimine por ahora */
+button {
   padding: 1rem 3rem;
   margin: 0 1rem;
   min-width: 20rem;
@@ -190,16 +194,16 @@ main {
 }
 
 .acertada .tarjeta__contenido {
-  animation: suceess 1.3s ease-in-out forwards;
+  animation: sucess 1.3s ease-in-out forwards;
 }
 
-.error {
+/* .error {
   animation: wrong 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-}
+} */
 
 .sube-nivel,
 .game-over,
-.end-game {
+.end-game{
   display: none;
   position: absolute;
   top: 40%;
@@ -207,17 +211,48 @@ main {
   left: 0;
   right: 0;
   background-image: none;
-  /* background-image: url(../img/fondo.jpg);
-  background-size: 105%;
-  background-position-y: 100%;
-  background-repeat: no-repeat;
-  background-size: auto;  */
 } 
+
+.loader-general{
+	/* background-color: rgba(0, 0, 0, 0.5); */
+	/* color: white; */
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 40%;
+  right: 0;
+  width: 250px;
+	height: 70px;
+}
+
+.loader-general.noVisible{
+  display: none;
+}
+
+img {
+  width: 50px;
+	height: 50px;
+}
 
 .sube-nivel.visible,
 .game-over.visible,
 .end-game.visible{
   display: flex;
+}
+
+.modal-loader {
+  /* background: rgb(2, 1, 1); */
+  /* padding: 3rem 3rem 1rem; */
+  /* margin: auto; */
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 .modal {
@@ -279,6 +314,18 @@ button:focus {
   margin: 0;
 }
 
+.rotate {
+	animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
 
 .sonido{
   display: none;
