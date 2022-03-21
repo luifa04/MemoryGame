@@ -330,3 +330,16 @@ button:focus {
 .sonido{
   display: none;
 }
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+ 
+.volver{
+  color: white;
+  text-decoration: none;
+}

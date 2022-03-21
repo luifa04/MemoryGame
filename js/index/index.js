@@ -14,13 +14,13 @@ async function takeInfoPage(page){
             const data = await response.json()
             const {info} = data;
             if(info.prev){
-              varPrevius =`<button class="indicador"><</button>`;
+              varPrevius =`<a class="indicador"><</a>`;
               document.getElementById("previous").setAttribute("data-href",info.prev);
               document.getElementById("previous").innerHTML= varPrevius;
             }
 
             if(info.next){
-              varNext =`<button class="indicador">></button>`;
+              varNext =`<a class="indicador">></a>`;
               document.getElementById("next").setAttribute("data-href",info.next);
               document.getElementById("next").innerHTML = varNext;                
             }

@@ -62,6 +62,11 @@ p{
     background-color: #1f1f1f;
 }
 
+a{
+  color: #fff;
+  font-size: 3rem; 
+}
+
 .lista{
     /* position: relative;
 	top: 50%;
