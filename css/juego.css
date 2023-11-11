@@ -4,11 +4,6 @@ body {
   flex-direction: column;
   position: relative;
 }
-/* 
-.fondo{
-	background-image: url(../img/fondo.jpg);
-	background-size: cover;
-} */
 
 /* 
 .bienvenida {
@@ -88,8 +83,6 @@ main {
   justify-content: center;
   position: relative;
   top: 60px;
-  /* margin-left: auto; 
- margin-right: auto; */
 }
 
 .mesa {
@@ -197,10 +190,6 @@ main {
   animation: sucess 1.3s ease-in-out forwards;
 }
 
-/* .error {
-  animation: wrong 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-} */
-
 .sube-nivel,
 .game-over,
 .end-game{
@@ -214,8 +203,6 @@ main {
 } 
 
 .loader-general{
-	/* background-color: rgba(0, 0, 0, 0.5); */
-	/* color: white; */
   display: flex;
   color: white;
   position: absolute;
